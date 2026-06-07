@@ -88,6 +88,56 @@ while i < 5:
 #     word = str(input("guess the word: "))
 # print("congrats")
 
+# juice machine:
+
+# question = str(input("Do you want juice? yes/no: "))
+# attempt = 0
+
+# while attempt < 3:
+#     if question == "yes":
+#         print("juice pouring")
+#         question = str(input("Do you want juice? yes/no: "))
+#         attempt += 1
+#     elif question == "no":
+#         print("ok")
+#         break
+#     else:
+#         print("invalid input")
+
+# shopping cart calculator:
+
+# total = 0
+
+# while True:
+#     price = input("enter price: ")
+
+#     if price == "done":
+#         break
+
+#     total += float(price)
+
+# print("total price:", total)
+
+username = "yasra"
+password = "admin"
+userinput = input("enter username: ")
+attempt = 0
+
+while attempt < 3:
+    if userinput == username:
+        inputpassword = input("enter password: ")
+        if inputpassword == password:
+            print("you are logged in")
+            break
+        else:
+            print("wrong password")
+            attempt += 1
+    else:
+        print("wrong username")
+        attempt += 1
+        userinput = input("enter username: ")
+else:
+    print("too many attempts, try again later")
 
 # Break and continue:
 # break will skip the loop
