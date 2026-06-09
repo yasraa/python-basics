@@ -6,6 +6,7 @@ quiz_set = [
     ("What is the tallest mountain in the world?", "Mount Everest"),
 ]
 score = 0
+missed = 0
 for question, answer in quiz_set:
     user_answer = input(question + " ")
     if user_answer == answer:
@@ -13,4 +14,5 @@ for question, answer in quiz_set:
         score += 1
     else:
         print(f"Wrong! The correct answer is: {answer}")
-print(f"Your final score is: {score}/{len(quiz_set)}")
+        missed += 1
+print(f"Your final score is: {score}/{len(quiz_set)} you got {missed} questions wrong")
