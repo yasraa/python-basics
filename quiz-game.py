@@ -5,8 +5,10 @@ quiz_set = [
     ("What is the chemical symbol for gold?", "Au"),
     ("What is the tallest mountain in the world?", "Mount Everest"),
 ]
+
 score = 0
 missed = 0
+name = input("enter your name to start the quiz: ")
 for index, (question, answer) in enumerate(quiz_set, start=1):
     user_answer = input(question + " ")
     if user_answer == answer:
@@ -16,3 +18,9 @@ for index, (question, answer) in enumerate(quiz_set, start=1):
         print(f"Wrong! The correct answer is: {answer}")
         missed += 1
 print(f"Your final score is: {score}/{len(quiz_set)} you got {missed} questions wrong")
+f = open("myfile.txt", "a")
+f.write(f"{name}-{score}/{len(quiz_set)}\n")
+f.close()
+
+with open("myfile.txt", "r") as f:
+    print(f.read())

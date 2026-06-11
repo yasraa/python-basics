@@ -1,8 +1,1 @@
-Hello, this is a sample line in myfile.txt.
-Here is a second line to demonstrate reading from a file.
-my name is yasraThis will be appended to the existing content.
-yasraThis will be appended to the existing content.
-niman
-yasra
-hamza
-saira
+hamza-3/5

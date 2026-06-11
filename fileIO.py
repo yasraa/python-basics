@@ -63,11 +63,21 @@
 # f.close()
 
 
+# f = open("myfile.txt", "r")
+# lines = f.read()
+# word = input("enter word you wanna look up: ")
+# if word in lines:
+#     print("present")
+# else:
+#     print("absent")
+# f.close()
+
 f = open("myfile.txt", "r")
-lines = f.read()
-word = input("enter word you wanna look up: ")
-if word in lines:
-    print("present")
+text = f.read()
+print(text)
+confirmation = input("do you wanna delete the content of this file yes/no?: ")
+if confirmation == "yes":
+    with open("myfile.txt", "w") as f:
+        pass
 else:
-    print("absent")
-f.close()
+    print("no changes done in your file")
