@@ -132,37 +132,36 @@ numbers = [4, 9, 2, 7, 1]
 # 9. 🌳 Recursive String Reverser
 
 
-# def reverse_word(word):
-#     if len(word) == 0:
-#         return ""
-#     return reverse_word(word[1:]) + word[0]
+def reverse_word(word):
+    if len(word) == 0:
+        return ""
+    return reverse_word(word[1:]) + word[0]
 
 
-# print(reverse_word("hello"))
+if __name__ == "__main__":
+    print(reverse_word("hello"))
+    print("this is the main module")
 
+    # Product Catalog:
+    catalog = {
+        "Laptop": {"price": 1000, "stock": 3},
+        "Mouse": {"price": 50, "stock": 10},
+        "Keyboard": {"price": 80, "stock": 5},
+    }
+    total = 0
 
-# Product Catalog:
+    while True:
+        print(catalog)
+        product = input("what do you need?: ")
 
-catalog = {
-    "Laptop": {"price": 1000, "stock": 3},
-    "Mouse": {"price": 50, "stock": 10},
-    "Keyboard": {"price": 80, "stock": 5},
-}
-total = 0
+        if product == "exit":
+            print("you have left the catalog")
+            break
 
-while True:
-    print(catalog)
-    product = input("what do you need?: ")
+        if product not in catalog:
+            print("item not available")
+            continue
 
-    if product == "exit":
-        print("you have left the catalog")
-        break
-
-    if product not in catalog:
-        print("item not available")
-        continue
-
-    if product in catalog:
         if catalog[product]["stock"] > 0:
             catalog[product]["stock"] -= 1
             total += catalog[product]["price"]
@@ -172,5 +171,4 @@ while True:
             print("item out of stock")
             continue
 
-
-print(f"you total is: {total}")
+    print(f"you total is: {total}")

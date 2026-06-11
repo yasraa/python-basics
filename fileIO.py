@@ -34,8 +34,40 @@
 #     print(text)
 
 
+# f = open("myfile.txt", "r")
+# lines = f.readlines()
+# for line in lines:
+#     print(line.strip())
+# f.close()
+
+# f = open("myfile.txt", "a")
+# name = input("enter your name: ")
+# f.write(f"\n{name}")
+# f.close()
+
+
+# f = open("myfile.txt", "a")
+# while True:
+#     name = input("enter your name: ")
+#     if name == "exit":
+#         break
+#     else:
+#         f.write(f"\n{name}")
+# f.close()
+
+
+# f = open("myfile.txt", "r")
+# lines = f.readlines()
+# len_count = len(lines)
+# print(f"the total line in myfile.txt {len_count}")
+# f.close()
+
+
 f = open("myfile.txt", "r")
-lines = f.readlines()
-for line in lines:
-    print(line.strip())
+lines = f.read()
+word = input("enter word you wanna look up: ")
+if word in lines:
+    print("present")
+else:
+    print("absent")
 f.close()

@@ -7,10 +7,10 @@ quiz_set = [
 ]
 score = 0
 missed = 0
-for question, answer in quiz_set:
+for index, (question, answer) in enumerate(quiz_set, start=1):
     user_answer = input(question + " ")
     if user_answer == answer:
-        print("Correct!")
+        print(f"{index} question Correct!")
         score += 1
     else:
         print(f"Wrong! The correct answer is: {answer}")
