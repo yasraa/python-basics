@@ -64,3 +64,20 @@ elif timest >= 20 and timest < 0:
     print("good night")
 else:
     print("time finish")
+
+
+# shorthand if-else:
+x = 5
+y = 10
+print("x is greater than y") if x > y else print("y is greater than x")
+
+password = input("enter your password: ")
+(
+    print("password is correct")
+    if password == "yasra123"
+    else (
+        print("password is incorrect")
+        if password == "yasra 122"
+        else print("you are close")
+    )
+)

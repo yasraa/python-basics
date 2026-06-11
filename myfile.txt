@@ -1,0 +1,3 @@
+Hello, this is a sample line in myfile.txt.
+Here is a second line to demonstrate reading from a file.
+my name is yasra

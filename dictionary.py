@@ -1,27 +1,27 @@
-# # dictionary is a collection of key-value pairs. It is unordered, mutable, and indexed.
-# # Dictionaries are defined using curly braces {} with key-value pairs separated by a colon :.
-# my_dict = {"name": "Alice", "age": 30, "city": "New York"}
-# print(my_dict)
-# print(type(my_dict))
-# print(
-#     my_dict["name"]
-# )  # Accessing value by key if the key does not exist it will raise a KeyError
-# print(
-#     my_dict.get("age")
-# )  # Accessing value using get() method if the key does not exist it will return None instead of raising an error
+# dictionary is a collection of key-value pairs. It is unordered, mutable, and indexed.
+# Dictionaries are defined using curly braces {} with key-value pairs separated by a colon :.
+my_dict = {"name": "Alice", "age": 30, "city": "New York"}
+print(my_dict)
+print(type(my_dict))
+print(
+    my_dict["name"]
+)  # Accessing value by key if the key does not exist it will raise a KeyError
+print(
+    my_dict.get("age")
+)  # Accessing value using get() method if the key does not exist it will return None instead of raising an error
 
-# print(
-#     my_dict.keys()
-# )  # Returns a view object that displays a list of all the keys in the dictionary
-# print(my_dict.values())  # Returns a view object that displays a list of all the values
+print(
+    my_dict.keys()
+)  # Returns a view object that displays a list of all the keys in the dictionary
+print(my_dict.values())  # Returns a view object that displays a list of all the values
 
-# for key in my_dict:
-#     print(key)  # Iterating through keys
+for key in my_dict:
+    print(key)  # Iterating through keys
 
 
-# # to update the value of a key in the dictionary, you can simply assign a new value to that key.
-# my_dict["age"] = 31
-# print(my_dict)
+# to update the value of a key in the dictionary, you can simply assign a new value to that key.
+my_dict["age"] = 31
+print(my_dict)
 
 
 student = {"name": "Yasra", "age": 19, "course": "Python"}
