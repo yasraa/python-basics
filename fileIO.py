@@ -72,12 +72,20 @@
 #     print("absent")
 # f.close()
 
-f = open("myfile.txt", "r")
-text = f.read()
-print(text)
-confirmation = input("do you wanna delete the content of this file yes/no?: ")
-if confirmation == "yes":
-    with open("myfile.txt", "w") as f:
-        pass
-else:
-    print("no changes done in your file")
+# f = open("myfile.txt", "r")
+# text = f.read()
+# print(text)
+# confirmation = input("do you wanna delete the content of this file yes/no?: ")
+# if confirmation == "yes":
+#     with open("myfile.txt", "w") as f:
+#         pass
+# else:
+#     print("no changes done in your file")
+
+
+# 1. 📖 File Reader Challenge:
+with open("file.txt", "r") as f:
+    txt = f.readlines()
+    len_count = len(txt)
+    print(len_count)
+    print(txt[:2])

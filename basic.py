@@ -209,3 +209,5 @@ print(string2.isprintable())
 # 21. string.startswith checks if a string starts with a given value
 # 22. string.swapcase convert uppercase to lowercase and vice versa in a string
 # 23.string.title converts first character of all the words in the sentence to capital
+
+#The fundamental difference is that == checks for value equality, whereas is checks for object identity.Use == when you want to know if two variables have the same data or content. Use is when you want to know if two variables point to the exact same object in a computer's memory.
