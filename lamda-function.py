@@ -4,3 +4,7 @@
 add = lambda x: x + 2
 
 print(add(3))
+
+
+square = lambda x: x * x
+print(square(4))
