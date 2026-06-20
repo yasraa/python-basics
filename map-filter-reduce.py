@@ -108,6 +108,10 @@ students = [
     {"name": "Yasra", "marks": 88},
 ]
 
+with open("file.txt", "w") as f:
+    for x in students:
+        f.write(f"{x['name']} : {x['marks']}\n")
+
 total_marks = reduce(lambda x, y: x + y["marks"], students, 0)
 print(total_marks)
 
